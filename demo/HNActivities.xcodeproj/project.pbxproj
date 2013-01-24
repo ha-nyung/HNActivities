@@ -24,6 +24,11 @@
 		A280A3B0167093BF00EAC747 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A3AF167093BF00EAC747 /* UIKit.framework */; };
 		A280A3B2167093BF00EAC747 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A3B1167093BF00EAC747 /* Foundation.framework */; };
 		A280A3B4167093BF00EAC747 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A3B3167093BF00EAC747 /* CoreGraphics.framework */; };
+		A28EE70816B174840090F055 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28EE70716B174840090F055 /* SenTestingKit.framework */; };
+		A28EE70916B174840090F055 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A3AF167093BF00EAC747 /* UIKit.framework */; };
+		A28EE70A16B174840090F055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A3B1167093BF00EAC747 /* Foundation.framework */; };
+		A28EE71016B174840090F055 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A28EE70E16B174840090F055 /* InfoPlist.strings */; };
+		A28EE71316B174840090F055 /* HNActivitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A28EE71216B174840090F055 /* HNActivitiesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +58,13 @@
 		A280A3AF167093BF00EAC747 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A280A3B1167093BF00EAC747 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A280A3B3167093BF00EAC747 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A28EE70616B174840090F055 /* HNActivitiesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HNActivitiesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28EE70716B174840090F055 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A28EE70D16B174840090F055 /* HNActivitiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HNActivitiesTests-Info.plist"; sourceTree = "<group>"; };
+		A28EE70F16B174840090F055 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A28EE71116B174840090F055 /* HNActivitiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNActivitiesTests.h; sourceTree = "<group>"; };
+		A28EE71216B174840090F055 /* HNActivitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNActivitiesTests.m; sourceTree = "<group>"; };
+		A28EE71416B174840090F055 /* HNActivitiesTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HNActivitiesTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A28EE70216B174840090F055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28EE70816B174840090F055 /* SenTestingKit.framework in Frameworks */,
+				A28EE70916B174840090F055 /* UIKit.framework in Frameworks */,
+				A28EE70A16B174840090F055 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +96,7 @@
 			children = (
 				A280A3CC167093E200EAC747 /* sources */,
 				A280A3B5167093BF00EAC747 /* HNActivities */,
+				A28EE70B16B174840090F055 /* HNActivitiesTests */,
 				A280A3AE167093BF00EAC747 /* Frameworks */,
 				A280A3AC167093BF00EAC747 /* Products */,
 			);
@@ -83,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A280A3AB167093BF00EAC747 /* HNActivities.app */,
+				A28EE70616B174840090F055 /* HNActivitiesTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +117,7 @@
 				A280A3AF167093BF00EAC747 /* UIKit.framework */,
 				A280A3B1167093BF00EAC747 /* Foundation.framework */,
 				A280A3B3167093BF00EAC747 /* CoreGraphics.framework */,
+				A28EE70716B174840090F055 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,7 +132,6 @@
 				A247557E169B238100ED89A9 /* MainViewController.xib */,
 				A280A3B6167093BF00EAC747 /* Supporting Files */,
 			);
-			name = HNActivities;
 			path = HNActivities;
 			sourceTree = "<group>";
 		};
@@ -142,6 +166,26 @@
 			name = sources;
 			sourceTree = "<group>";
 		};
+		A28EE70B16B174840090F055 /* HNActivitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A28EE71116B174840090F055 /* HNActivitiesTests.h */,
+				A28EE71216B174840090F055 /* HNActivitiesTests.m */,
+				A28EE70C16B174840090F055 /* Supporting Files */,
+			);
+			path = HNActivitiesTests;
+			sourceTree = "<group>";
+		};
+		A28EE70C16B174840090F055 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A28EE70D16B174840090F055 /* HNActivitiesTests-Info.plist */,
+				A28EE70E16B174840090F055 /* InfoPlist.strings */,
+				A28EE71416B174840090F055 /* HNActivitiesTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +205,24 @@
 			productName = HNActivities;
 			productReference = A280A3AB167093BF00EAC747 /* HNActivities.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A28EE70516B174840090F055 /* HNActivitiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28EE71716B174840090F055 /* Build configuration list for PBXNativeTarget "HNActivitiesTests" */;
+			buildPhases = (
+				A28EE70116B174840090F055 /* Sources */,
+				A28EE70216B174840090F055 /* Frameworks */,
+				A28EE70316B174840090F055 /* Resources */,
+				A28EE70416B174840090F055 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNActivitiesTests;
+			productName = HNActivitiesTests;
+			productReference = A28EE70616B174840090F055 /* HNActivitiesTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -185,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				A280A3AA167093BF00EAC747 /* HNActivities */,
+				A28EE70516B174840090F055 /* HNActivitiesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +269,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A28EE70316B174840090F055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28EE71016B174840090F055 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A28EE70416B174840090F055 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A280A3A7167093BF00EAC747 /* Sources */ = {
@@ -221,6 +308,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A28EE70116B174840090F055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28EE71316B174840090F055 /* HNActivitiesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -228,6 +323,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				A2475591169B23D400ED89A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A28EE70E16B174840090F055 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A28EE70F16B174840090F055 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -309,6 +412,36 @@
 			};
 			name = Release;
 		};
+		A28EE71516B174840090F055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HNActivitiesTests/HNActivitiesTests-Prefix.pch";
+				INFOPLIST_FILE = "HNActivitiesTests/HNActivitiesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A28EE71616B174840090F055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HNActivitiesTests/HNActivitiesTests-Prefix.pch";
+				INFOPLIST_FILE = "HNActivitiesTests/HNActivitiesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +462,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A28EE71716B174840090F055 /* Build configuration list for PBXNativeTarget "HNActivitiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28EE71516B174840090F055 /* Debug */,
+				A28EE71616B174840090F055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
